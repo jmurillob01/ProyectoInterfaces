@@ -1,0 +1,117 @@
+html {
+    background-color: rgb(43, 42, 42);
+    height: 100%;
+}
+
+body,
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(15, 118, 208);
+    height: 100px;
+    font-size: 30px;
+    text-shadow: 2px 1px black;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.header__nav__list__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__div {
+    display: grid;
+    justify-items: center;
+}
+
+.main__div__h1 {
+    margin-top: 5%;
+    font-size: 100px;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+
+    /* Visibilidad de los bordes */
+    border: 5px solid rgb(15, 118, 208);
+    border-top: none;
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    text-shadow: 2px 1px black;
+}
+
+.main__div__h3 {
+    text-shadow: 2px 1px black;
+    font-size: 70px;
+    justify-content: center;
+}
+
+.main__div__p {
+    margin-top: 10%;
+    font-size: 20px;
+    text-shadow: 2px 1px black;
+}
+
+.main__buttons {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.main__buttons__user,
+.main__buttons__services {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    text-shadow: 2px 1px black;
+    color: #fff;
+    background-color: rgb(15, 118, 208);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__buttons__user:hover,
+.main__buttons__services:hover {
+    background-color: #fff;
+    text-shadow: 0px 0px black;
+    color: rgb(15, 118, 208);
+}
+
+.main__picture {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main__picture__360 {
+    display: flex;
+    margin: 20px auto;
+    border: 0 none;
+    max-width: 880px;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.footer__privacy {
+    /* Fijamos el footer abajo del todo */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Centramos el contenido */
+    text-align: center;
+    margin-top: 100px;
+}

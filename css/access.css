@@ -1,0 +1,119 @@
+html {
+    background-color: rgb(43, 42, 42);
+    height: 100%;
+}
+
+body,
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(15, 118, 208);
+    height: 100px;
+    font-size: 30px;
+    text-shadow: 2px 1px black;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.main__buttons {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.main__buttons__continue,
+.main__buttons__exit {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    text-shadow: 2px 1px black;
+    color: #fff;
+    background-color: rgb(15, 118, 208);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__buttons__continue:hover,
+.main__buttons__exit:hover {
+    background-color: #fff;
+    text-shadow: 0px 0px black;
+    color: rgb(15, 118, 208);
+}
+
+.main-access {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 10px;
+    justify-items: center;
+
+    margin-top: 3%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    width: 600px;
+    /* width: 40%; */
+    height: 40%;
+    /* height: 120px; */
+
+    border: 2px solid rgb(15, 118, 208);
+    border-top: none;
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form__label {
+    color: #fff;
+}
+
+.form__input {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.form__input:invalid{
+    background-color: rgba(233, 73, 73, 0.5);
+
+}
+
+.footer__content {
+    background-color: rgb(15, 118, 208);
+    height: 150px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.footer__privacy-access {
+    /* Fijamos el footer abajo del todo */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Centramos el contenido */
+    text-align: center;
+}

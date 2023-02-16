@@ -1,0 +1,140 @@
+<!-- Fika -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <!-- Plantillas de estilos -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link type="image/png" rel="icon" href="../img/Logo-Proyecto.png">
+</head>
+
+<body class="body">
+    <!-- Encabezado -->
+    <header>
+        <nav class="header__nav">
+            <ul class="heder__nav__list">
+                <li class="heder__nav__list__itemlogo">
+                    <a href="#" itemscope itemtype="https://schema.org/CreativeWork"><img src="../img/Logo-Proyecto.png" alt="Logo"width="110px">
+                         <!-- <span hidden itemprop="url">Javier Murillo Burgos</span> -->
+                         <div hidden itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <span hidden itemprop="email">javiermb2302@gmail.com</span>
+                            <span hidden itemprop="name">Javier Murillo Burgos</span>
+                         </div>
+                         <span hidden itemprop="name">Logo fika</span>
+                         <span hidden itemprop="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0</span>
+                    </a>
+                </li>
+                <div class="header__nav__list__content">
+                    <li class="heder__nav__list__item"><a href="#">Movies</a> </li>
+                    <li class="heder__nav__list__item"><a href="#">Series</a></li>
+                    <li class="heder__nav__list__item"><a href="access.html">Log Out</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la web -->
+    <main>
+
+        <!-- Sección con trailer y nueva información -->
+        <section class="section__recent">
+            <article class="section__recent__article">
+                <img src="../img/movie.jpg" alt="movie" class="section__recent__Item">
+                <div class="section__recenct__article__info">
+                    <h3 class="section__article__h3">Title</h3>
+                    <h4 class="section__article__h4">Accion, horror</h4>
+                    <p class="section__article__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                        expedita voluptas? Numquam error, ut molestiae dolore nobis aliquid in voluptate fugit qui.
+                        Porro nulla exercitationem vel repudiandae quod? Architecto, molestias.</p>
+                    <p class="section__article__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                        expedita voluptas? Numquam error, ut molestiae dolore nobis aliquid in voluptate fugit qui.
+                        Porro nulla exercitationem vel repudiandae quod? Architecto, molestias.</p>
+                    <p class="section__article__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                        expedita voluptas? Numquam error, ut molestiae dolore nobis aliquid in voluptate fugit qui.
+                        Porro nulla exercitationem vel repudiandae quod? Architecto, molestias.</p>
+                    <p class="section__article__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                        expedita voluptas? Numquam error, ut molestiae dolore nobis aliquid in voluptate fugit qui.
+                        Porro nulla exercitationem vel repudiandae quod? Architecto, molestias.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- ¿Hacer menu de desplazamiento? -->
+        <section class="section__content">
+            <article>
+                <div class="section__article__head">
+                    <h1 class="section__article__h1">Accion</h1>
+                    <hr class="section__article__hr">
+                </div>
+                <div class="section__article__content">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <!-- Si con mostrar información de los actores se refiere a los microdatos, repetir proceso con cada película -->
+                    <div class="content-microdate" itemscope itemtype="https://schema.org/Movie">
+                        <p itemprop="actor">Person</p>
+                        <p itemprop="director">Person</p>
+                        <p itemprop="duration">Duration</p>
+                        <p itemprop="dateCreated">Date</p>
+                    </div>
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                </div>
+            </article>
+
+            <article>
+                <div class="section__article__head">
+                    <h1 class="section__article__h1">Horror</h1>
+                    <hr class="section__article__hr">
+                </div>
+                <div class="section__article__content">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                </div>
+            </article>
+
+            <article>
+                <div class="section__article__head">
+                    <h1 class="section__article__h1">Comedy</h1>
+                    <hr class="section__article__hr">
+                </div>
+                <div class="section__article__content">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                    <img src="../img/movie.jpg" alt="movie" width="300px" height="150px" class="item">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de la web -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__content__social">
+                <img src="../img/facebook.png" alt="facebook" width="50px" height="50px"
+                    class="footer__content__social__icon">
+                <img src="../img/Twitter.png" alt="twuitter" width="50px" height="50px"
+                    class="footer__content__social__icon">
+                <img src="../img/instagram.png" alt="instagram" width="50px" height="50px"
+                    class="footer__content__social__icon">
+            </div>
+            <div class="footer__content__info">
+                <a href="#" class="footer__content__info__p">About Us?</a>
+                <a href="#" class="footer__content__info__p">Cookies</a>
+                <a href="#" class="footer__content__info__p">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer__privacy">
+            <p class="footer__privacy__p">© Javier Murillo Burgos</p>
+        </div>
+    </footer>
+</body>
+
+</html>

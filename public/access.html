@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/access.css">
+    <title>Access</title>
+</head>
+
+<body onload="displayForm('always','option-login')">
+    <!-- Encabezado vacío pero visible -->
+    <header>
+
+    </header>
+
+    <main class="main-access">
+        <div class="main__buttons">
+            <a href="#" class="main__buttons__form" title="Login" id="option-login"
+                onclick="displayForm('always','option-login')">Login</a>
+            <a href="#" class="main__buttons__form" title="Register" id="option-register"
+                onclick="displayForm('occasional','option-register')">Register</a>
+        </div>
+        <!-- Formulario para el usuario -->
+        <form name='f1' action="post" class="main__form" id="form__access">
+            <!-- Dependiendo de la clase del elemento, la información será visible o no -->
+            <label for="user" class="form__label form-always">User</label>
+            <label for="email" class="form__label form-occasional">Email</label>
+            <input type="text" class="form__input form-always" id="username" placeholder="Username"
+                pattern="^([A-Za-z0-9]){6,20}$"
+                title="El usuario debe tener entre 5 y 20 caracteres, solo caracteres alfanuméricos">
+            <input type="email" class="form__input form-occasional" id="email" placeholder="user@domain.com/es"
+                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="El email ">
+
+            <label for="dni" class="form__label form-occasional">Dni</label>
+            <label for="phone" class="form__label form-occasional">Phone</label>
+            <input type="text" title="Introducir con 0" name="dni" class="form__input form-occasional" id="dni" placeholder="01234567F" pattern="^[0-9]{8}[A-Za-z]{1}$">
+            <input type="tel" name="phone" class="form__input form-occasional" id="phone" placeholder="666659999" pattern="^[0-9]{9}$">
+
+            <label for="pass" class="form__label form-always">Password</label>
+            <label for="pass" class="form__label form-occasional">Repeat Password</label>
+            <input type="password" class="form__input form-always" id="password" placeholder="Password"
+                pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
+                title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+            <input type="password" class="form__input form-occasional" id="confirm-password"
+                placeholder="Repeat Password" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
+                title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+        </form>
+        <div class="main__buttons">
+            <button id="check" class="main__buttons__continue" onclick="check()">Continue</button>
+            <button id="check" class="main__buttons__exit"
+                onclick="location.href='../public/welcome.html'">Exit</button>
+        </div>
+    </main>
+    <!-- Pie de la web -->
+    <footer>
+        <div class="footer__privacy-access">
+            <p class="footer__privacy__p">© Javier Murillo Burgos</p>
+        </div>
+    </footer>
+    <script src="../script/access.js"></script>
+</body>
+
+</html>

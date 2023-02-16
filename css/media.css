@@ -1,0 +1,155 @@
+html {
+    background-color: rgb(43, 42, 42);
+    height: 100%;
+}
+
+body,
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(15, 118, 208);
+    height: 100px;
+    font-size: 30px;
+    text-shadow: 2px 1px black;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.heder__nav__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+}
+
+.heder__nav__list__item__logo {
+    margin: auto;
+}
+
+.header__nav__list__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Testear */
+.heder__nav__list__item:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px;
+}
+
+.section__article__head {
+    display: flex;
+}
+
+.section__content {
+    /* color: aliceblue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__article__hr {
+    border: solid rgb(15, 118, 208);
+    width: 85%;
+    margin-left: 0px;
+    margin-top: 45px;
+}
+
+.section__article__h1 {
+    margin-top: 30px;
+    margin-left: 2%;
+    background-color: rgb(15, 118, 208);
+    text-shadow: 2px 1px black;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section__article__content {
+    margin: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+.content-microdate {
+    display: none;
+}
+
+.item {
+    margin: auto;
+}
+
+.section__recent__article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    /* color: #fff; */
+}
+
+.section__recent__Item {
+    width: 90%;
+    margin: auto;
+    grid-column: 1/2;
+}
+
+.section__recenct__article__info {
+    padding: 20px;
+    width: 90%;
+    grid-column: 2/3;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.section__article__h3 {
+    border-bottom: 4px solid rgb(15, 118, 208);
+    width: 20%;
+}
+
+.section__article__h4 {
+    margin-bottom: 10px;
+}
+
+.footer__content {
+    background-color: rgb(15, 118, 208);
+    height: 150px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.footer__content__social {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.footer__content__info {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__privacy {
+    background-color: rgb(15, 118, 208);
+    text-align: center;
+}

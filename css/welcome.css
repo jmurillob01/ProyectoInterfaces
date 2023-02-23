@@ -108,7 +108,8 @@ header {
 
 .footer__privacy {
     /* Fijamos el footer abajo del todo */
-    position: fixed;
+    /* position: fixed; */
+    margin-top: 100px;
     bottom: 0;
     width: 100%;
     /* Centramos el contenido */

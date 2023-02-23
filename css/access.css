@@ -112,6 +112,7 @@ header {
 .footer__privacy-access {
     /* Fijamos el footer abajo del todo */
     position: fixed;
+    /* margin-top: 300px; */
     bottom: 0;
     width: 100%;
     /* Centramos el contenido */

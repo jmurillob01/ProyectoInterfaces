@@ -138,8 +138,10 @@ header {
 .footer__content__social {
     margin: auto;
     display: flex;
+    justify-content: center;
+    width: 50%;
     flex-direction: row;
-    gap: 10%;
+    gap: 5%;
 }
 
 .footer__content__info {

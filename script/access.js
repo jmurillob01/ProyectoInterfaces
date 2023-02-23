@@ -16,7 +16,7 @@ function check() {
         // Redirigimos a la página
         location.href = "../public/movies.html";
     } else {
-        alert("Introduce datos válidos");
+        // alert("Introduce datos válidos");
     }
 }
 
@@ -33,7 +33,7 @@ function checkLogin() {
 
     // Comprobamos valores
     if (!REGEX_USERNAME.test(userName)) valid = false;
-    if (!REGEX_PASSWORD.test(userName)) password = false;
+    if (!REGEX_PASSWORD.test(password)) valid = false;
 
     return valid;
 }
